@@ -1,0 +1,194 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
+
+
+
+
+/******************************************************** 
+　ヘッダー
+********************************************************/
+header.header01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(225deg,#FCFAF2,#91989F);
+  height: 5rem;
+}
+
+div.logo {
+  width: 60px;
+  height: 30px;
+  object-fit: contain;
+  font-size: x-large;
+}
+
+
+
+nav.nav ul.item {
+  display: flex;
+  align-items: center;
+}
+
+li.list {
+  padding-left: 1.5rem;
+}
+
+nav.nav ul.item li.contact a{
+  display: inline-block;
+  background: #FFC408;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  padding: 0.5rem 1.2rem;
+}
+
+a {
+  font-weight: bold;
+
+}
+
+
+
+
+/******************************************************** 
+　メイン
+********************************************************/
+
+.fv-container {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(0deg, #494f4a, #08192d)
+}
+
+
+
+
+
+/******************************************************** 
+　フッター
+********************************************************/
+
+footer.footer05{
+  background: linear-gradient(225deg,#FCFAF2,#91989F);
+  padding: 1rem
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container-content{
+  width: 40%;
+
+}
+
+.div.logo{
+  width: 60px;
+  height: 30px;
+  margin-bottom: 1.5rem;
+
+}
+
+nav.nav{
+  margin-bottom: 1.5rem;
+
+}
+
+nav.nav ul.item li.f_list {
+  padding-bottom: 1rem;
+
+}
+
+nav.nav ul.item li.f_list:last-child{
+  padding-bottom: 0;
+}
+
+nav.nav ul.item li.f_list a{
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+ul.sns-container{
+  display: flex;
+  margin-bottom: 1.5rem;
+
+}
+
+nav.nav ul.item li.contact a{
+  display: inline-block;
+  background: #FFC408;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  padding: 0.5rem 1.2rem;
+}
+
+
+
+
+ul.sns-container li.f_list img.icon-twitter{
+  width: 30px;
+  height: auto;
+}
+
+
+ul.sns-container li.f_lust img.icon-facebook{
+width: 25px;
+height: auto;
+}
+
+ul.sns-container li.f_lust img.icon-instagram{
+  width: 25px;
+  height: auto;
+}
+
+.footer-container-image{
+  background:url(build.png)no-repeat;
+  background-size: cover;
+  width: 20%;
+}
+
+p.copyright{
+  color: #fff;
+  background-color: #213871;
+  padding: 0.8rem;
+}
