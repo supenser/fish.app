@@ -4,7 +4,9 @@
 
 .footer01{
   background: linear-gradient(225deg,#FCFAF2,#91989F);
-  padding: 1rem
+  padding: 1rem;
+  font-family: "游明朝";
+
 }
 
 .footer-container{

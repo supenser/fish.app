@@ -8,6 +8,7 @@ header.header01 {
   padding: 1.5rem;
   background: linear-gradient(225deg,#FCFAF2,#91989F);
   height: 4rem;
+  font-family: "游明朝";
 }
 
 .header_logo {
