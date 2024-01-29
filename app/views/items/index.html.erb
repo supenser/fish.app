@@ -1,10 +1,32 @@
 <!--メイン-->
 <%= render "shared/header" %>
-    <div class="fv-container">
+  <div class="fv-container">
+    
+      <%# 商品一覧 %>
+  <div class='item-contents'>
+    <h2 class='title'>本日のお魚はこちら</h2>
+    <ul class='item-lists'>
+      <% @items.each do |i| %>
+        <li class='list'>
+          <%= link_to item_path(i.id) do %>
+          <div class='item-img-content'>
+            <%= image_tag i.image, class: "item-img" %>
+          </div>
+          <div class='item-info'>
+            <h3 class='item-name'>
+              <%= i.title %>
+            </h3>
+            <div class='item-price'>
+              <span><%= i.price %>円<br></span>
+            </div>
+          </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
     
     
     
-    
-    
-    </div>
+  </div>
 <%= render "shared/footer" %>

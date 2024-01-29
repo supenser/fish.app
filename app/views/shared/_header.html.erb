@@ -5,9 +5,13 @@
         <ul class="header_item">
         <% if user_signed_in? %>
           <li><%= link_to '万両の歴史', "#", class: "header_list" %></li>
-          <li><%= link_to "#{current_user.name}さん", "/users/#{current_user.id}", class: "header_list" %></li>
+          <li><%= link_to "#{current_user.name}さん", "#", class: "header_list" %></li>
           <li><%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "header_list" %></li>
           <li><%= link_to '予約はこちら', "#", class: "list_contact" %></li>
+        <%# elsif @user = User.find(params[:1]) %>
+          <li><%#= link_to "#{current_user.name}さん", "#", class: "header_list" %></li>
+          <li><%#= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "header_list" %></li>
+          <li><%#= link_to '出品はこちら', "#", class: "list_contact" %></li>
         <% else %>
           <li><%= link_to '万両の歴史', "#", class: "header_list" %></li>
           <li><%= link_to '新規登録', new_user_registration_path, class: "header_list" %></li>
